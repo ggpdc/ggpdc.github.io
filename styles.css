@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #391456 5%, #431963 15%,  #431963 85%, #391456 95%);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 67vh;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.header-container {
+    display: inline-block;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-size: 1.35em;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: fit-content;
+    animation: typing 4.5s steps(75, end) forwards, blinking 1.5s infinite;
+    animation-delay: 0s, 4.45s;
+    font-weight: 100;
+    border-right: 0.1em solid;
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: white}
+    100% {border-right-color: transparent}
+  }
+
+.btn-shared {
+    padding: 0.4em 0.8em;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    color: #431963;
+    font-size: 1.23em;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.join-btn {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 5.15s;
+    animation-fill-mode: both;
+}
+
+.btn-shared:hover {
+    background-color: #2F1149;
+    color: white;
+}
+
+.email-input {
+    width: 17em;
+    padding: 0.4em;
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 1px solid #ddd;
+    color: #391456;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+.email-input::placeholder {
+    font-size: 1.05em;
+    color: #BFBFBF;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+#message {
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+    margin-top: 1.5em;
+    font-size: 1.75em;
+    font-weight: medium;
+    display: none;
+}
+
+.tick-img {
+    max-width: 11em;
+    max-height: 11em;
+    display: inline-block;
+    vertical-align: middle;
+}

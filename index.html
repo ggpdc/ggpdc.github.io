@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xquire</title>
+  <meta name="description" content="Generative AI Simulations for Business">
+  <meta name="author" content="Xquire">
+  <meta property="og:title" content="Xquire">
+  <meta property="og:type"  content="website">
+  <meta property="og:url"   content="https://www.xquire.ai">
+  <meta property="og:description" content="Generative AI Simulations for Business">
+  <meta property="og:image" content="xquire_white.png">
+  <link rel="icon" href="xquire_icon.png">
+  <link rel="apple-touch-icon" href="xquire_icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="xquire_white.png" alt="Xquire Logo" class="logo" id="logo">
+    <div class="header-container" id="header">
+        <h3 class="typed">Generative AI Simulations for Human Evaluation and Development.</h3>
+    </div>
+    <button id="showForm" class="btn-shared join-btn">Join Waitlist</button>
+    <form id="emailForm" class="email-form" style="display: none">
+        <input type="email" id="email" class="email-input" placeholder="Enter your email to join our waitlist" required>
+        <input type="submit" id="submitButton" class="btn-shared submit-btn" value="Submit">
+        <img id="successTick" class="tick-img" src="success.gif" style="display: none;"></img>
+    </form>
+    <p id=message></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
