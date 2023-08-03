@@ -6,7 +6,7 @@ body {
     margin: 0;
     background: linear-gradient(to top, #391456 5%, #431963 15%,  #431963 85%, #391456 95%);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 
 .header-container {
     display: inline-block;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
     font-size: 1.35em;
 }
 
@@ -63,8 +63,8 @@ body {
     border-radius: 25px;
     color: #431963;
     font-size: 1.23em;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
+    font-weight: medium;
     cursor: pointer;
 }
 
@@ -90,17 +90,17 @@ body {
     color: #391456;
     border-radius: 25px;
     font-size: 1.1em;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
 }
 
 .email-input::placeholder {
     font-size: 1.05em;
     color: #BFBFBF;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
 }
 
 #message {
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Avenir, Futura, Arial, Helvetica, sans-serif;
     margin-top: 1.5em;
     font-size: 1.75em;
     font-weight: medium;
