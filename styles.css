@@ -19,7 +19,7 @@ body {
 }
 
 .logo {
-    width: clamp(30px, 67vw, 550px);
+    width: clamp(20px, 67vw, 550px);
     animation: fadeIn 3s ease-in-out;
 }
 
