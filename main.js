@@ -4,7 +4,6 @@ document.getElementById('showForm').addEventListener('click', function() {
 });
 
 document.getElementById('emailForm').addEventListener('submit', function(event) {
-    event.preventDefault();
     var messageElement = document.getElementById('message');
     messageElement.textContent = "Thank you for your interest. We'll be in touch!";
     messageElement.style.display = 'block';
