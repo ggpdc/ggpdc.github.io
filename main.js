@@ -1,9 +1,11 @@
 document.getElementById('showForm').addEventListener('click', function() {
+    this.classList.add('active');
     document.getElementById('emailForm').style.display = 'block';
     document.getElementById('showForm').style.display = 'none';
 });
 
 document.getElementById('emailForm').addEventListener('submit', function(event) {
+    document.getElementById('submitButton').classList.add('active');
     event.preventDefault();
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://script.google.com/macros/s/AKfycbyj3mtyQU0AzQKz2cZ1vDuP1AhQ7BdHpI6YCHIxtZhnIbyDMcZOU_uRprU-NVks2V5s/exec', true);

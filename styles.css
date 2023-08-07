@@ -83,6 +83,11 @@ body {
     color: white;
 }
 
+.btn-shared.active {
+    background-color: #2F1149;
+    color: white;
+}
+
 .email-input {
     width: clamp(10px, 42vw, 350px);
     padding-top: clamp(0.4vw, 1.4vw, 2.9px);
