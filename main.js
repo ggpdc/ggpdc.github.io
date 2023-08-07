@@ -3,7 +3,7 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
 
     var formData = new FormData(event.target);
 
-    fetch('https://script.google.com/macros/s/AKfycbyj3mtyQU0AzQKz2cZ1vDuP1AhQ7BdHpI6YCHIxtZhnIbyDMcZOU_uRprU-NVks2V5s/exec', {
+    fetch(event.target.action, {
         method: 'POST',
         body: formData
     })
