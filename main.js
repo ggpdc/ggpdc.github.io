@@ -1,11 +1,9 @@
 document.getElementById('emailForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get form data
     var formData = new FormData(event.target);
 
-    // Send data to Google Script
-    fetch(event.target.action, {
+    fetch('https://script.google.com/macros/s/AKfycbyj3mtyQU0AzQKz2cZ1vDuP1AhQ7BdHpI6YCHIxtZhnIbyDMcZOU_uRprU-NVks2V5s/exec', {
         method: 'POST',
         body: formData
     })
@@ -21,7 +19,6 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
             document.getElementById('header').style.display = 'none';
             document.getElementById('successTick').style.display = 'inline';
         } else {
-            // Handle any errors or unexpected responses here
             console.error("Failed to submit form:", text);
         }
     })
