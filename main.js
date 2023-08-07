@@ -18,8 +18,6 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
                 document.getElementById('logo').style.display = 'none';
                 document.getElementById('header').style.display = 'none';
                 document.getElementById('successTick').style.display = 'inline';
-            } else {
-                // handle error, maybe show a different message
             }
         }
     };
